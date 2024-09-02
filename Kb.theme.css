@@ -1,0 +1,111 @@
+/**
+ * @name SimpleImageBackground
+ * @author playmyvictim on cord
+ * @version 1.0
+ * @description A Vencord theme with a custom background image, white text, and simplified styling.
+ * @source [Insert your source here if applicable]
+ * @website [Insert your website here if applicable]
+ * @invite [Insert your invite here if applicable]
+ */
+
+/* IMPORT CSS */
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+
+/* SETTINGS */
+:root {
+  /* COLORS */
+  --main-color: #1E2A38; /* Light-ish dark blue */
+  --hover-color: #2A3B4C; /* Slightly darker blue */
+  --text-color: #FFFFFF; /* White text color */
+  --background-color: #000000; /* Black background for the app */
+  --secondary-background-color: rgba(0, 0, 0, 0.8); /* Enhanced image visibility */
+
+  /* GENERAL */
+  --main-font: Arial, sans-serif; /* Main font */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* Font for codeblocks */
+  --text-normal: var(--text-color); /* Default text color */
+  --text-muted: var(--text-color); /* Muted text color */
+  --channels-width: 240px; /* Channel list width */
+  --members-width: 260px; /* Member list width */
+
+  /* APP BACKGROUND */
+  --background-image: url('https://raw.githubusercontent.com/deadinrehab/kb-image-anime/main/wp2527151.png'); /* Your image background */
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 0%;
+  --background-blur: 0px;
+
+  /* CHANNEL COLORS */
+  --channel-background: rgba(0, 0, 0, 0.5); /* Semi-transparent black for channels */
+  --channel-color: var(--text-color); /* White text color for channels */
+  --channel-text: var(--text-color); /* White text color for channel names */
+  --channel-text-selected: var(--text-color); /* White text color for selected channel */
+  --channel-unread: var(--main-color); /* Highlight color for unread channels */
+  --muted-color: rgba(255, 255, 255, 0.1); /* Muted channel color */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(0, 0, 0, 0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness);
+  --user-popout-contrast: var(--background-contrast);
+  --user-popout-saturation: var(--background-saturation);
+  --user-popout-invert: var(--background-invert);
+  --user-popout-grayscale: var(--background-grayscale);
+  --user-popout-sepia: var(--background-sepia);
+  --user-popout-blur: calc(var(--background-blur) + 3px);
+  --user-popout-overlay: rgba(0, 0, 0, 0.6);
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness);
+  --user-modal-contrast: var(--background-contrast);
+  --user-modal-saturation: var(--background-saturation);
+  --user-modal-invert: var(--background-invert);
+  --user-modal-grayscale: var(--background-grayscale);
+  --user-modal-sepia: var(--background-sepia);
+  --user-modal-blur: calc(var(--background-blur) + 3px);
+
+  /* THEME VENCORD COLORS */
+  --vc-blue: var(--main-color);
+  --vc-blue-hover: var(--hover-color);
+}
+
+/* LINK COLORS */
+a {
+  color: var(--text-color) !important; /* Sets all links to white */
+}
+
+/* PINGED MENTIONS */
+.mention {
+  color: var(--text-color) !important; /* Sets pinged mentions to white */
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Optional: Adds a subtle background for pings */
+}
